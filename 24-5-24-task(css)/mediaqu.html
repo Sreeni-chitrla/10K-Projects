@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDIA QUERIES</title>
+
+    <style>
+      @media screen and (min-width: 320px) {
+       
+        .parent {
+          height: 70vh;
+          width: 50vw;
+          border: 2px solid;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-image: linear-gradient(
+            rgb(76, 55, 55),
+            rgb(120, 117, 117)
+          );
+        }
+        .header {
+          height: 15%;
+          border: 2px solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(red, yellow);
+        }
+        .bdy {
+          height: 65%;
+          border: 2px solid;
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          padding: 10px;
+          background-image: linear-gradient(rgb(255, 0, 170), yellow);
+        }
+        .footer {
+          height: 20%;
+          border: 2px solid;
+          background-image: linear-gradient(rgb(0, 17, 255), rgb(255, 174, 0));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .cnt1 {
+          height: 95%;
+          width: 25%;
+          border: 2px solid;
+          background-image: linear-gradient(rgb(212, 0, 255), rgb(96, 95, 106));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .cnt2 {
+          height: 95%;
+          width: 35%;
+          border: 2px solid;
+          background-image: linear-gradient(rgb(55, 255, 0), rgb(255, 89, 0));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .cnt3 {
+          height: 95%;
+          width: 25%;
+          border: 2px solid;
+          background-image: linear-gradient(
+            rgb(127, 193, 199),
+            rgb(214, 214, 47)
+          );
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .layout {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        .parent {
+          height: 70vh;
+          width: 50vw;
+          border: 2px solid;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-image: linear-gradient(red,yellow);
+        }
+        .header {
+          height: 15%;
+          border: 2px solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(red, yellow);
+        }
+        .bdy {
+          height: 65%;
+          border: 2px solid;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          padding: 10px;
+          background-image: linear-gradient(rgb(255, 0, 170), yellow);
+        }
+        .footer {
+          height: 20%;
+          border: 2px solid;
+          background-image: linear-gradient(rgb(0, 17, 255), rgb(255, 174, 0));
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .cnt1 {
+          height: 95%;
+          width: 100%;
+          border: 2px solid;
+          background-image: linear-gradient(rgb(212, 0, 255), rgb(96, 95, 106));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .cnt2 {
+          height: 95%;
+          width: 100%;
+          border: 2px solid;
+          background-image: linear-gradient(rgb(55, 255, 0), rgb(255, 89, 0));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .cnt3 {
+          height: 95%;
+          width: 100%;
+          border: 2px solid;
+          background-image: linear-gradient(
+            rgb(127, 193, 199),
+            rgb(214, 214, 47)
+          );
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .layout {
+          display: flex;
+          justify-content: center;
+        }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="parent">
+        <div class="header"><h1>HEADER</h1></div>
+        <div class="bdy">
+          <div class="cnt1"><h2>ASIDE</h2></div>
+          <div class="cnt2"><h2>MIDDLE</h2></div>
+          <div class="cnt3"><h2>ASIDE</h2></div>
+          <div></div>
+        </div>
+        <div class="footer"><h2>FOOTER</h2></div>
+      </div>
+    </div>
+  </body>
+</html>

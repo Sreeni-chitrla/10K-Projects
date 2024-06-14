@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .main{
+            justify-content: center;
+            align-items: center;
+        }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        border-radius: 50px;
+
+    
+      }
+      
+
+      @keyframes example {
+        0% {
+          background-color: red;
+          left: 100px;
+          top: 0px;
+          
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        
+        75% {
+          background-color: green;
+          left: 50px;
+          top: 200px;
+        }
+        100% {
+          background-image: linear-gradient(red yellow green);
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <h1>Animation Bouncing Ball</h1>
+<div class="main">
+       <div></div>
+    
+    
+    </div>
+    
+      
+    </p>
+  </body>
+</html>

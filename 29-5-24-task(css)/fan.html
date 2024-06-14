@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Fan</title>
+    <style>
+        .parent{
+            width: 50%;
+            height: 70vh;
+            border: 2px solid;
+            display: grid;
+            justify-items: center;
+        }
+
+
+        .foot{
+            width: 200px;
+            height: 20px;
+            background-color:black;
+        
+            
+          }
+       .stand{
+        width: 20px;
+            height: 240px;
+            background-color:black;
+            /* margin-top: 200px; */
+        }
+
+        .rotar{
+            width: 180px;
+            height: 180px;
+            margin: auto;
+            border: 2px solid rebeccapurple;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+
+        }
+        .circle{
+            border: 2px solid;
+            width: 80%;
+            height: 150px;
+            border-radius: 100px;
+            background-color: grey;
+            
+         }
+        .circle:hover img{
+        transition: 1s;
+        transform: rotate(360deg);
+      }
+
+         
+
+    </style>
+</head>
+<body>
+
+    
+<div class="parent">  
+<h1>Table Fan</h1>
+<div class="rotar">
+    <div class="circle">
+        <div class="fan" style=" margin-left: 15px; margin-top: 5px;"><img src="./multimedia/fan.png" alt="" height="140px" width="110px"></div> 
+        <button action="but1" style="height: 40px; margin-left: 39px; margin-top:25px;">1</button> <br>
+        <button id="but2" style="height: 40px;margin-left: 39px;">2</button> <br>
+        <button id="but3" style="height: 40px;margin-left: 39px;">3</button><br>
+    </div>
+</div>
+<div class="stand"></div> 
+<div class="foot"></div>
+
+
+
+    
+</body>
+</html>
